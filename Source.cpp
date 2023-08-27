@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "counter.h"
 
 
@@ -8,7 +8,7 @@ void count_class(Counter new_counter) {
 	while (!exit) {
 		char input;
 
-		std::cout << "Ââåäèòå êîìàíäó('+', '-', '=' èëè 'x') : ";
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñƒ('+', '-', '=' Ð¸Ð»Ð¸ 'x') : ";
 		std::cin >> input;
 		switch (input) {
 		case '+':
@@ -21,7 +21,7 @@ void count_class(Counter new_counter) {
 			new_counter.print_counter();
 			break;
 		case 'x':
-			std::cout << "Äî ñâèäàíèÿ!" << std::endl;
+			std::cout << "Ð”Ð¾ ÑÐ²Ð¸Ð´Ð°Ð½Ð¸Ñ!" << std::endl;
 			exit = true;
 			break;
 		}
@@ -33,14 +33,14 @@ int main() {
 	setlocale(LC_ALL, "ru_RU");
 	//Counter new_counter;
 
-	std::cout << "Âû õîòèòå óêàçàòü íà÷àëüíîå çíà÷åíèå ñ÷¸ò÷èêà? Ââåäèòå yes èëè no: ";
+	std::cout << "Ð’Ñ‹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ ÑÑ‡Ñ‘Ñ‚Ñ‡Ð¸ÐºÐ°? Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ yes Ð¸Ð»Ð¸ no: ";
 	std::string question;
 	std::cin >> question;
 
 	if (question == "yes") {
 
 		int x;
-		std::cout << std::endl << "Ââåäèòå íà÷àëüíîå çíà÷åíèå ñ÷¸ò÷èêà: ";
+		std::cout << std::endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ ÑÑ‡Ñ‘Ñ‚Ñ‡Ð¸ÐºÐ°: ";
 		std::cin >> x;
 		Counter new_counter(x);
 		//new_counter.set_start_int(x);
@@ -48,7 +48,7 @@ int main() {
 
 	}
 	else if (question == "no") {
-		std::cout << "Íà÷àëüíîå çíà÷åíèå ñ÷¸ò÷èêà óñòàíîâëåíî ïî óìîë÷àíèþ (1)" << std::endl;
+		std::cout << "ÐÐ°Ñ‡Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ ÑÑ‡Ñ‘Ñ‚Ñ‡Ð¸ÐºÐ° ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ (1)" << std::endl;
 		Counter new_counter;
 		count_class(new_counter);
 
