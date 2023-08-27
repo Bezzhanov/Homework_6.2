@@ -1,35 +1,6 @@
 #include <iostream>
+#include "counter.h"
 
-class Counter {
-public:
-	Counter(int x) {
-		this->count = x;
-	};
-	Counter() {
-		count = 1;
-	};
-	/*
-	void set_start_int(int x) {
-			this->count = x;
-	};
-	*/
-
-	void print_counter() {
-		std::cout << this->count << std::endl;
-	}
-
-	void add() {
-		this->count++;
-	}
-
-	void subtraction() {
-		this->count--;
-	}
-
-protected:
-	int count;
-
-};
 
 void count_class(Counter new_counter) {
 
